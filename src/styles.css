@@ -50,38 +50,24 @@ svg {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  width: clamp(116px, 14vw, 160px);
   min-width: 0;
-  text-transform: uppercase;
 }
 
-.brand-mark {
-  width: 66px;
-  height: 46px;
+.brand-logo {
+  display: block;
+  width: 100%;
+  height: auto;
   flex: 0 0 auto;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 4;
-  stroke-linecap: round;
-  stroke-linejoin: round;
 }
 
-.brand strong {
-  display: block;
-  color: var(--green);
-  font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: clamp(31px, 4vw, 45px);
-  line-height: 0.84;
-  letter-spacing: 0;
-}
-
-.brand small {
-  display: block;
-  max-width: 210px;
-  color: var(--white);
-  font-size: 11px;
-  font-weight: 900;
-  line-height: 1.05;
+.site-header .brand-logo {
+  width: auto;
+  height: 70px;
+  max-width: 194px;
+  object-fit: contain;
+  transform: translateY(-6px) scale(1.45);
+  transform-origin: left top;
 }
 
 .nav-links {
@@ -365,7 +351,7 @@ h1 span:last-child,
   color: var(--white);
   background:
     linear-gradient(rgba(9, 25, 11, 0.85), rgba(9, 25, 11, 0.85)),
-    url("/assets/heroalex.png") center 62% / cover fixed;
+    url("../public/assets/heroalex.png") center 62% / cover fixed;
 }
 
 .area-inner {
@@ -474,23 +460,23 @@ h1 span:last-child,
 }
 
 .image-mosaic div:nth-child(1) {
-  background-image: url("/assets/work-hardscape.png");
+  background-image: url("../public/assets/work-hardscape.png");
   background-position: center;
 }
 
 .image-mosaic div:nth-child(2) {
-  background-image: url("/assets/work-land-clearing.png");
+  background-image: url("../public/assets/work-land-clearing.png");
   background-position: 44% center;
 }
 
 .image-mosaic div:nth-child(3) {
   grid-column: 1 / 3;
-  background-image: url("/assets/work-excavation.png");
+  background-image: url("../public/assets/work-excavation.png");
   background-position: center;
 }
 
 .thumb-row span {
-  background-image: url("/assets/heroalex.png");
+  background-image: url("../public/assets/heroalex.png");
 }
 
 .seal {
@@ -667,7 +653,7 @@ h1 span:last-child,
   color: var(--white);
   background:
     linear-gradient(rgba(14, 24, 11, 0.92), rgba(14, 24, 11, 0.92)),
-    url("/assets/heroalex.png") center / cover;
+    url("../public/assets/heroalex.png") center / cover;
 }
 
 .contact-panel h2 {
@@ -716,6 +702,10 @@ h1 span:last-child,
   gap: 8px;
   justify-items: end;
   font-weight: 800;
+}
+
+.site-footer .brand {
+  width: clamp(148px, 18vw, 210px);
 }
 
 .reveal {
@@ -767,14 +757,14 @@ h1 span:last-child,
     padding: 16px 18px;
   }
 
-  .brand small {
-    max-width: 150px;
-    font-size: 9px;
+  .brand {
+    width: 96px;
   }
 
-  .brand-mark {
-    width: 48px;
-    height: 35px;
+  .site-header .brand-logo {
+    height: 54px;
+    max-width: 148px;
+    transform: translateY(-5px) scale(1.35);
   }
 
   .phone-button {
@@ -855,15 +845,21 @@ h1 span:last-child,
   .site-footer div {
     justify-items: start;
   }
+
+  .site-footer .brand {
+    width: 168px;
+  }
 }
 
 @media (max-width: 430px) {
-  .brand strong {
-    font-size: 29px;
+  .brand {
+    width: 86px;
   }
 
-  .brand small {
-    display: none;
+  .site-header .brand-logo {
+    height: 48px;
+    max-width: 132px;
+    transform: translateY(-4px) scale(1.28);
   }
 
   .service-grid {

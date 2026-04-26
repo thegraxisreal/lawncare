@@ -14,17 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
     <header class="site-header" aria-label="Primary navigation">
       <a class="brand" href="#home" aria-label="Alex's Lawn Care home">
-        <svg viewBox="0 0 88 62" aria-hidden="true" class="brand-mark">
-          <path d="M5 45 30 14l11 15 13-20 29 36" />
-          <path d="m17 45 14-17 11 17M47 45 59 28l14 17" />
-          <path d="M9 53h70" />
-        </svg>
-        <span><strong>Alex's</strong><small>Lawn Care & Property Maintenance LLC</small></span>
+        <img class="brand-logo" src="public/assets/simplelogo-header.png" alt="Alex's Lawn Care & Property Maintenance LLC" />
       </a>
       <nav class="nav-links" aria-label="Sections">
         <a href="#services">Services</a>
@@ -32,7 +27,7 @@
         <a href="#work">Previous Work</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="phone-button" href="tel:+15187966410" aria-label="Call Alex's Lawn Care">
+      <a class="phone-button" href="tel:+15187966410" aria-label="Call us today">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.63 2.61a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6.27 6.27l1.29-1.29a2 2 0 0 1 2.11-.45c.84.3 1.71.51 2.61.63A2 2 0 0 1 22 16.92z"/></svg>
         (518) 796-6410
       </a>
@@ -40,7 +35,7 @@
 
     <main id="home">
       <section class="hero">
-        <img src="/assets/heroalex.png" alt="Landscaped residential property with stone retaining wall and manicured plant beds" />
+        <img src="public/assets/heroalex.png" alt="Landscaped residential property with stone retaining wall and manicured plant beds" />
         <div class="hero-shade"></div>
         <div class="hero-content reveal">
           <p class="eyebrow">Queensbury, NY</p>
@@ -114,8 +109,8 @@
           <p class="eyebrow">Why Choose Us</p>
           <h2>Local. Reliable.</h2>
           <ul>
-            <li>Local owner, Alex Stehle</li>
-            <li>Fully licensed and insured</li>
+            <li>Local owner-operated service</li>
+            <li>Professional and hardworking landscaping company</li>
             <li>Top-quality equipment</li>
             <li>Attention to detail on every job</li>
             <li>Clear communication and dependable service</li>
@@ -141,7 +136,7 @@
         </div>
         <div class="portfolio-grid">
           <article class="portfolio-card portfolio-card-large reveal">
-            <img src="/assets/work-excavation.png" alt="Excavators moving soil during a residential property excavation project" />
+            <img src="public/assets/work-excavation.png" alt="Excavators moving soil during a residential property excavation project" />
             <div>
               <span>Excavation</span>
               <h3>Equipment-ready site work</h3>
@@ -149,14 +144,14 @@
             </div>
           </article>
           <article class="portfolio-card reveal">
-            <img src="/assets/work-hardscape.png" alt="Finished patio, stone wall, plantings, and landscaped water feature" />
+            <img src="public/assets/work-hardscape.png" alt="Finished patio, stone wall, plantings, and landscaped water feature" />
             <div>
               <span>Hardscape & Beds</span>
               <h3>Stonework and fresh plantings</h3>
             </div>
           </article>
           <article class="portfolio-card reveal">
-            <img src="/assets/work-land-clearing.png" alt="Bobcat equipment clearing brush and overgrowth near a fence line" />
+            <img src="public/assets/work-land-clearing.png" alt="Bobcat equipment clearing brush and overgrowth near a fence line" />
             <div>
               <span>Land Clearing</span>
               <h3>Brush removal and site cleanup</h3>
@@ -171,7 +166,7 @@
           <h2>Get On The Schedule</h2>
           <p class="facebook-note">Spring cleanups, mulch installs, lawn maintenance, gravel work, hydroseeding, excavation, and property maintenance are available around Queensbury.</p>
           <div class="cta-row">
-            <a class="button primary" href="tel:+15187966410">Call Alex Today</a>
+            <a class="button primary" href="tel:+15187966410">Call Us Today</a>
             <a class="button dark" href="https://www.facebook.com/p/Alexs-Lawn-Care-Property-Maintenance-LLC-100055273670246/" target="_blank" rel="noopener">See Facebook Work</a>
           </div>
         </div>
@@ -190,8 +185,7 @@
 
     <footer class="site-footer">
       <a class="brand" href="#home">
-        <svg viewBox="0 0 88 62" aria-hidden="true" class="brand-mark"><path d="M5 45 30 14l11 15 13-20 29 36" /><path d="m17 45 14-17 11 17M47 45 59 28l14 17" /><path d="M9 53h70" /></svg>
-        <span><strong>Alex's</strong><small>Lawn Care & Property Maintenance LLC</small></span>
+        <img class="brand-logo" src="public/assets/transparentalexlogo.png" alt="Alex's Lawn Care & Property Maintenance LLC" />
       </a>
       <p>Professional and hardworking landscaping company serving residential and commercial properties across Queensbury.</p>
       <div>
@@ -201,6 +195,6 @@
       </div>
     </footer>
 
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>
